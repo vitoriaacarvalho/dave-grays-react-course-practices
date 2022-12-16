@@ -1,10 +1,15 @@
-function Header() {
+const Header=({title})=> {
+    Header.defaultProps={
+      title: "Groceries"
+    };
     return (
       <>
-      <h1>HELLO WORLD</h1>
+        <h1>{title}</h1>
       </>
     );
+    
   }
   
+
   export default Header;
   
